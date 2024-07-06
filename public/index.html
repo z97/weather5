@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather by Coordinates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      margin: 5px;
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+    .weather-data {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather by Coordinates</h1>
+  <input type="text" id="latitude" placeholder="Latitude">
+  <input type="text" id="longitude" placeholder="Longitude">
+  <button onclick="fetchWeather()">Fetch Weather</button>
+  <div class="weather-data" id="weatherData"></div>
+  <script src="script.js"></script>
+</body>
+</html>
